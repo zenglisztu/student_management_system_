@@ -17,7 +17,7 @@ public:
     int m_retake;
     string m_gpa;
 
-    Student(string name_f, string name_l, string id, int score)
+    Student(string &name_f, string &name_l, string &id, int score)
     {
         this->m_name_f = name_f;
         this->m_name_l = name_l;
@@ -56,7 +56,7 @@ public:
             return "F";
     }
 
-    void ShowInfo()
+    void ShowInfo() const
     {
         cout << this->m_name_f << " ";
         cout << this->m_name_l << " ";
@@ -71,11 +71,11 @@ public:
 
 vector<string> SplitString(const string& str, const string& delimiter);
 int CheckId(const string &id);
+void PrintAllStu(vector<Student> &stus);
 
 int main()
 {
     string stu_data;
-    int n = 5;
 
     vector<Student> vt_stus;
     while (getline(cin, stu_data))
@@ -84,23 +84,28 @@ int main()
         {
             break;
         }
-        //getline(cin, stu_data);
+
+        // 将读入的字符串按空格拆分
         vector<string> v_data = SplitString(stu_data, " ");
+        // 判断学号是否合法
         if (CheckId(v_data[2]))
         {
+            // 按输入的信息创建学生类并添加到vt_stus容器中
             Student stu_1(v_data[0], v_data[1], v_data[2], stoi(v_data[3]));
             vt_stus.push_back(stu_1);
         }
     }
     cout << "Name_f Name_l stu_id score retake GPA rank" << endl;
-    for (int i = 0; i < vt_stus.size(); ++i)
-    {
-        vt_stus[i].ShowInfo();
-    }
+    PrintAllStu(vt_stus);
+
 
     return 0;
 }
 
+/// 字符串拆分
+/// \param str 字符串
+/// \param delimiter 分隔符
+/// \return  保存拆分后的字符的vector容器
 vector<string> SplitString(const string &str, const string &delimiter)
 {
     vector<string> res_vct;
@@ -118,6 +123,10 @@ vector<string> SplitString(const string &str, const string &delimiter)
     return res_vct;
 }
 
+
+/// 判断学号是否合法
+/// \param id
+/// \return 合法 - 1 非法 - 0
 int CheckId(const string &id)
 {
     vector<string> id_start = {"2022", "2021", "2020"};
@@ -129,13 +138,21 @@ int CheckId(const string &id)
     }
 
     //判断学号开头四位是否合法
-    for (size_t i = 0; i < id_start.size(); ++i)
+    for (const auto &id_s : id_start)
     {
-        if(id.substr(0, 4) == id_start[i])
+        if(id.substr(0, 4) == id_s)
         {
             return 1;
         }
     }
 
     return 0;
+}
+
+void PrintAllStu(vector<Student> &stus)
+{
+    for (const auto &stu : stus)
+    {
+        stu.ShowInfo();
+    }
 }

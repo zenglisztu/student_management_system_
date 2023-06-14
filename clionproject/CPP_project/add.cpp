@@ -17,7 +17,7 @@ public:
     int m_retake;
     string m_gpa;
 
-    Student(string name_f, string name_l, string id, int score)
+    Student(string &name_f, string &name_l, string &id, int score)
     {
         this->m_name_f = name_f;
         this->m_name_l = name_l;
@@ -170,7 +170,7 @@ int Init(vector<Student> &stus)
 
 void PrintAllStu(vector<Student> &stus)
 {
-    for (auto stu : stus)
+    for (const auto &stu : stus)
     {
         stu.ShowInfo();
     }
