@@ -1,0 +1,26 @@
+# ninja log v5
+3	392	7088751220136893	CMakeFiles/cpp_learn.dir/frinefd_member.cpp.obj	ddfb9c54723894dc
+3	422	7088558639374661	CMakeFiles/cpp_learn.dir/main.cpp.obj	aaf49b1fd3cf095b
+521	726	7089673883206619	cpp_learn.exe	58da604392ee3ad9
+1	509	7088566890618087	CMakeFiles/cpp_learn.dir/class_list.cpp.obj	7c5dc812ea7f43e0
+3	398	7088728678002795	CMakeFiles/cpp_learn.dir/null_prt.cpp.obj	8df1f4779fe2a7e0
+1	413	7088584670851287	CMakeFiles/cpp_learn.dir/ClassMember.cpp.obj	fa88607c889cc5b3
+4	419	7088597268112194	CMakeFiles/cpp_learn.dir/static_class.cpp.obj	2a5f332a7557d9ef
+4	374	7088604941066152	CMakeFiles/cpp_learn.dir/static_class_func.cpp.obj	89afee77cadad8d2
+4	653	7088656009714056	CMakeFiles/cpp_learn.dir/this_pointer.cpp.obj	49bf3ef4af065750
+5	391	7088737904044555	CMakeFiles/cpp_learn.dir/const_class_func.cpp.obj	49916c2ea36c9a09
+3	385	7088820895476416	CMakeFiles/cpp_learn.dir/friend_class.cpp.obj	6b1375d28414a648
+5	398	7088834681313906	CMakeFiles/cpp_learn.dir/friend_member_func.cpp.obj	7a73ffe2ed20ad1f
+8	903	7088847766957571	CMakeFiles/cpp_learn.dir/plus.cpp.obj	36f0067c4b46e0cc
+2	384	7088882999611399	CMakeFiles/cpp_learn.dir/left.cpp.obj	fb55db73991b952c
+0	288	7089695740020036	build.ninja	af451270d465f0cb
+6	853	7088918580622930	CMakeFiles/cpp_learn.dir/plusplus.cpp.obj	811d724d416f6a9f
+3	374	7088938244584711	CMakeFiles/cpp_learn.dir/equ.cpp.obj	43c649c7a801f21
+0	777	7089648112963272	CMakeFiles/cpp_learn.dir/class_inherit.cpp.obj	b14e9fdce779ec0b
+3	520	7089673881240452	CMakeFiles/cpp_learn.dir/file_opt.cpp.obj	de13cc7b44b60db8
+0	599	7089704450453121	CMakeFiles/cpp_learn.dir/cpp_call_py.cpp.obj	3b1903e246c8b2d8
+601	918	7089704453566840	cpp_learn.exe	efc3e6dcaab828a1
+3	442	7089705964709156	CMakeFiles/cpp_learn.dir/cpp_call_py.cpp.obj	3b1903e246c8b2d8
+443	642	7089705966630123	cpp_learn.exe	efc3e6dcaab828a1
+4	402	7089725384500843	CMakeFiles/cpp_learn.dir/cpp_call_py.cpp.obj	3b1903e246c8b2d8
+402	615	7089725386380612	cpp_learn.exe	efc3e6dcaab828a1

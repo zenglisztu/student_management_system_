@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/file_opt.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/friend_class.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/friend_member_func.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/frinend_member.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/main.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/null_prt.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/static_class_func.cpp" charset="GBK" />
+  </component>
+</project>
