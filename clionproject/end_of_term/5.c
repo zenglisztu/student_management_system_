@@ -15,17 +15,18 @@ void PrintArr(int arr[], int size);
 
 int main(int argc, char *argv[])
 {
-    int num_arr[N] = {0};
-    int sta[N] = {0};
-    int sort[N] = {0};
-    int num_amount = 0;
-    int sort_amount = 0;
+    int num_arr[N] = {0}; //用于存储读入的所有数字
+    int sta[N] = {0};  //用于储存不需要排序的数字
+    int sort[N] = {0}; //用于储存需要排序的数字
+    int num_amount = 0; //读入数字的个数
+    int sort_amount = 0; //需要排序的数字个数
 
-    num_amount  = GetNum(num_arr);
-    sort_amount = SplitArr(num_arr, sta, sort, num_amount);
+    num_amount  = GetNum(num_arr); //读入数字
+    sort_amount = SplitArr(num_arr, sta, sort, num_amount); //将储存所有数字的数组拆分
+    SortArr(sort, sort_amount); //对需要排序的数组进行排序
 
-    PrintArr(sta, num_amount - sort_amount);
-    PrintArr(sort, sort_amount);
+    PrintArr(sta, num_amount - sort_amount); //打印无需排序的数组
+    PrintArr(sort, sort_amount); //打印排序后的数组
     return 0;
 }
 
@@ -75,7 +76,6 @@ int SplitArr(int src[], int sta[], int sort[], int size)
         }
     }
 
-    SortArr(sort, j);
     return j;
 }
 
